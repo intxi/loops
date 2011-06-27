@@ -130,6 +130,11 @@ class Loops::Logger < ::Delegator
   end
 
   # @private
+  def __setobj__(obj)
+    @implementation = obj
+  end
+
+  # @private
   # Delegator's method_missing ignores the &block argument (!!!?)
   def method_missing(m, *args, &block)
     target = self.__getobj__
