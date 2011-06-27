@@ -105,7 +105,7 @@ module Loops
           :daemonize   => false,
           :config_file => 'config/loops.yml',
           :environment => nil,
-          :framework   => 'rails',
+          :framework   => 'none',
           :loops_root  => 'app/loops',
           :pid_file    => nil,
           :root        => nil,
